@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <ul class="nav-links">
+            <li class="active" ;>
+                <a href="#"></a>Начална Страница</li>
+            <li>
+                <a href="https://www.pizzaamici.com/menu/piczi/">Оферти за пици</a></li>
+            <li class="ctn">
+                <a href="contact.html">Контакт</a></li>
+        </ul>
+
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Направи си своя пица</h2>
+            <div class="line"></div>
+            <h1>Крисчоз Пицария</h1>
+            <a href="#" class="ctn">Научи повече</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Най-популярни пици</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/img1.jpg" alt="">
+                <h4>Ла Стела</h4>
+                <p>доматен сос, пилешко месо, топено сирене, чери домат, моцарела</p>
+                <a href="https://www.pizzaamici.com/produkt/la-stela/" class="ctn">Поръчай</a>
+            </div>
+            <div class="col">
+                <img src="./images/img2.jpg" alt="">
+                <h4>Руколино</h4>
+                <p>доматен сос, пилешко месо, чери домати, рукола, пармезан, кашкавал</p>
+                <a href="https://www.pizzaamici.com/produkt/rukolino/" class="ctn">Поръчай</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="exlore-content">
+            <h1>Виж Всички Видове Пици</h1>
+            <div class="line"></div>
+            <p>Разполагаме с много различни видове пици от които можете да изберете</p>
+            <a href="https://www.pizzaamici.com/menu/piczi/" class="ctn">Научи повече</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Направи пица по твой вкус</h1>
+                <div class="line"></div>
+                <p>Вече можете да си поръчате пица, по ваша рецепта. Вие избирате какви да са подправките и добавките им!</p>
+                <a href="https://www.dominos.bg/menu/varna-delta-planet-mall#pizzas/make_your_own" class="ctn">Научи повече</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallary">
+                    <img src="./images/img5.jpg" alt="">
+                    <img src="./images/img6.png" alt="">
+                    <img src="./images/img7.jpg" alt="">
+                    <img src="./images/img8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Най-добрият ресторант за пици в България</p>
+        <p>© 2016-2022 Всички права запазени от Кристиян Горинов и Кристиян Данев</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
